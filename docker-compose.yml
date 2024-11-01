@@ -1,0 +1,24 @@
+version: '3.8'  # You can omit this line if using a version without the version attribute
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.client  # Adjust if your Dockerfile is named differently
+    ports:
+      - "3000:80"  # Maps port 5000 on your host to port 5000 in the container
+    environment:
+      - REACT_APP_API_URL=http://backend:3000  # Adjust API URL if needed
+    depends_on:
+      - backend  # Ensure backend service starts first
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.api  # Adjust if your Dockerfile is named differently
+    ports:
+      - "5000:5000"  # Maps port 3000 on your host to port 3000 in the container
+    volumes:
+      - ./backend:/app  # Mounts your backend code for live updates
+    environment:
+      - FLASK_ENV=development  # Set Flask environment if needed
