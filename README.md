@@ -37,18 +37,18 @@ This repository contains a Flask backend and a React frontend, packaged together
 
 /Assignment
 │
-├── /frontend                  # React frontend source code
-│   ├── Dockerfile.client      # Dockerfile for frontend
-│   ├── package.json          # Frontend dependencies
-│   └── /src                  # React components
+├── /frontend                  # React frontend source code.
+│   ├── Dockerfile.client      # Dockerfile for frontend.
+│   ├── package.json          # Frontend dependencies.
+│   └── /src                  # React components.
 │
-├── /backend                   # Flask backend source code
-│   ├── Dockerfile.api        # Dockerfile for backend
-│   ├── requirements.txt      # Backend dependencies
-│   └── app.py               # Main Flask application
+├── /backend                   # Flask backend source code.
+│   ├── Dockerfile.api        # Dockerfile for backend.
+│   ├── requirements.txt      # Backend dependencies.
+│   └── app.py               # Main Flask application.
 │
-├── docker-compose.yml        # Docker Compose configuration
-└── README.md                # Project documentation
+├── docker-compose.yml        # Docker Compose configuration.
+└── README.md                # Project documentation.
 
 ## Getting Started
 
