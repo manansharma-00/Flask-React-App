@@ -70,8 +70,8 @@ This repository contains a Flask backend and a React frontend, packaged together
    ```bash
    docker-compose up --build
 3. **Access the Application**:
-   - Frontend: Open your browser and navigate to http://localhost:5000.
-   - Backend: You can access the backend API at http://localhost:3000.
+   - Frontend: Open your browser and navigate to http://localhost:3000.
+   - Backend: You can access the backend API at http://localhost:5000.
 4. **Stopping the Application**:
    To stop the application, press Ctrl + C in the terminal where Docker Compose is running. To remove all containers, run:
    ```bash
